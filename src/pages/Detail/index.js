@@ -25,23 +25,35 @@ export default function Detail() {
   useEffect(() => {
     setCurrItem(Data[seq - 1]);
     const tl = ani.timeline();
+    const seqEle = wrapper.current.querySelector('.left .seq');
     const txt = wrapper.current.querySelector('.left hgroup');
+    const desc = wrapper.current.querySelector('.left .desc');
     const pic = wrapper.current.querySelector('.right');
     tl.add({
-      targets: txt,
-      opacity: [0, 1],
+      targets: seqEle,
       scale: [2, 1]
-    }).add({
-      targets: pic,
-      opacity: [0, 1],
-      scale: [0, 1]
-    });
+    })
+      .add({
+        targets: txt,
+        opacity: [0, 1],
+        scale: [2, 1]
+      })
+      .add({
+        targets: desc,
+        opacity: [0, 1],
+        scale: [0, 1]
+      })
+      .add({
+        targets: pic,
+        opacity: [0, 1],
+        scale: [0, 1]
+      });
     tl.play();
     return () => {
       tl.pause();
     };
   }, [seq]);
-  const { header, intro, pic } = currItem;
+  const { header, intro, pic, desc } = currItem;
   return (
     <StyledWrapper ref={wrapper}>
       <Header />
@@ -52,6 +64,7 @@ export default function Detail() {
           <h1>{header}</h1>
           <h2>{intro}</h2>
         </hgroup>
+        <p className="desc">{desc}</p>
         <div className="navs">
           <Link to="/" className="nav home">
             <img src={ImageHome} alt="home image" />

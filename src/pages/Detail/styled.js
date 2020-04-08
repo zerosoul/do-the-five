@@ -12,18 +12,19 @@ const StyledWrapper = styled.div`
     flex-direction: column;
     margin-right: 2rem;
     position: relative;
+    max-width: 10rem;
     .seq {
       font-weight: 800;
       position: absolute;
-      top: -4rem;
+      top: -2.2rem;
       left: -1rem;
       font-size: 1.2rem;
       padding: 0.4rem;
       border-radius: 50%;
-      border: 1px solid #fff;
+      border: 2px solid #d2b300;
       width: 2rem;
       height: 2rem;
-      background: red;
+      background: #dbb864;
       color: #fff;
       display: flex;
       justify-content: center;
@@ -45,7 +46,11 @@ const StyledWrapper = styled.div`
         color: #555;
       }
     }
-
+    .desc {
+      font-size: 0.8rem;
+      line-height: 1.2rem;
+      color: #666;
+    }
     .navs {
       position: absolute;
       bottom: -6rem;

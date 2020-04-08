@@ -3,35 +3,35 @@
     "pos": "hand",
     "header": "手",
     "intro": "勤洗手",
-    "desc": "",
+    "desc": "没有什么比洗手能更有效地杀死病毒了，如果有，那就洗两遍。",
     "pic": "hand.png"
   },
   {
     "pos": "elbow",
     "header": "肘",
     "intro": "咳嗽进肘",
-    "desc": "",
+    "desc": "快要咳嗽的时候，切忌用手直接去捂口，避免接触交叉感染。",
     "pic": "elbow.png"
   },
   {
     "pos": "face",
     "header": "脸",
     "intro": "忌摸脸",
-    "desc": "",
+    "desc": "手经常携带病菌，摸脸容易造成病从口入，从眼角膜入...",
     "pic": "face.png"
   },
   {
     "pos": "feet",
     "header": "脚",
     "intro": "保持2米距离",
-    "desc": "",
+    "desc": "与人保持距离，是种美德。",
     "pic": "feet.png"
   },
   {
     "pos": "sick",
     "header": "病",
     "intro": "待在家",
-    "desc": "",
+    "desc": "不舒服通常意味着免疫力下降，待在家自我隔离是上上策。",
     "pic": "sick.png"
   }
 ]

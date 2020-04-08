@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
     outline:none;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    color:#ffffeb;
   }
   html{
     -webkit-font-smoothing: antialiased;
@@ -25,27 +24,28 @@ const GlobalStyle = createGlobalStyle`
   }
   #root{
     min-height:100vh;
-    background-image:linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%);
+    background-color:rgba(245, 230, 200, 0.4);
+    /* background-image:linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%); */
   }
 
   @media screen and (min-width: 320px){
       html {
-          font-size: 12px;
+          font-size: 13px;
       }
   }
   @media screen and (min-width: 375px){
       html {
-          font-size: 14px;
+          font-size: 15px;
       }
   }
   @media screen and (min-width: 480px){
       html {
-          font-size: 20px;
+          font-size: 17px;
       }
   }
   @media screen and (min-width: 768px){
       html {
-          font-size: 24px;
+          font-size: 18px;
       }
   }
 `;

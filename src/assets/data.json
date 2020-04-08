@@ -1,0 +1,37 @@
+[
+  {
+    "pos": "hand",
+    "header": "手",
+    "intro": "勤洗手",
+    "desc": "",
+    "pic": "hand.png"
+  },
+  {
+    "pos": "elbow",
+    "header": "肘",
+    "intro": "咳嗽进肘",
+    "desc": "",
+    "pic": "elbow.png"
+  },
+  {
+    "pos": "face",
+    "header": "脸",
+    "intro": "忌摸脸",
+    "desc": "",
+    "pic": "face.png"
+  },
+  {
+    "pos": "feet",
+    "header": "脚",
+    "intro": "保持2米距离",
+    "desc": "",
+    "pic": "feet.png"
+  },
+  {
+    "pos": "sick",
+    "header": "病",
+    "intro": "待在家",
+    "desc": "",
+    "pic": "sick.png"
+  }
+]

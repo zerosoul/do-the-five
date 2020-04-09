@@ -25,7 +25,7 @@ const StyledWrapper = styled.div`
           font-weight: 800;
           margin-right: 0.4rem;
           border-radius: 50%;
-          border: 1px solid #ccc;
+          border: 1px solid rgba(2, 2, 2, 0.1);
           width: 3rem;
           height: 3rem;
           display: flex;

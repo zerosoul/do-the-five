@@ -16,9 +16,15 @@ const StyledWrapper = styled.div`
     }
     .navs {
       position: absolute;
-      bottom: -2rem;
+      bottom: -2.5rem;
       left: 50%;
       display: flex;
+      padding: 0.5rem 0.4rem 0.4rem 0.4rem;
+      border: 1px solid #999;
+      border-radius: 8px;
+      @media screen and (max-width: 425px) {
+        bottom: -3.5rem;
+      }
       .nav {
         cursor: pointer;
         background: none;
@@ -26,7 +32,7 @@ const StyledWrapper = styled.div`
         border: none;
         padding: 0 0.6rem;
         &[disabled] {
-          visibility: hidden;
+          filter: opacity(0.4);
         }
         &.prev {
         }
@@ -47,11 +53,14 @@ const StyledWrapper = styled.div`
       margin-right: 2rem;
       position: relative;
       max-width: 10rem;
+      @media screen and (max-width: 425px) {
+        margin-right: 0;
+      }
       .seq {
         font-weight: 800;
         position: absolute;
-        top: -2.2rem;
-        left: -1rem;
+        top: 0.4rem;
+        left: -2.6rem;
         font-size: 1.2rem;
         padding: 0.4rem;
         border-radius: 50%;
@@ -65,15 +74,14 @@ const StyledWrapper = styled.div`
         align-items: center;
       }
       hgroup {
-        margin-bottom: 2rem;
-        border-left: 1px solid #999;
-        padding-left: 1rem;
+        margin-bottom: 1rem;
+        /* border-left: 1px solid #999; */
         line-height: 1.2;
         min-width: 6rem;
         h1 {
           font-size: 3rem;
           font-weight: 800;
-          margin-bottom: 1rem;
+          margin-bottom: 0.4rem;
         }
         h2 {
           font-size: 1.2rem;

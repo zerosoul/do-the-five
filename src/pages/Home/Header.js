@@ -8,7 +8,8 @@ const StyledWrapper = styled.header`
   justify-content: center;
   align-items: center;
   .logo {
-    width: 6.5rem;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     border: 1px solid #bbb;
     padding: 0.5rem;

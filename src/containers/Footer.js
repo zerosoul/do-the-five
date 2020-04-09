@@ -5,9 +5,6 @@ const StyledWrapper = styled.footer`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100vw;
   border-top: 1px solid #ccc;
   padding: 0.4rem 0;

@@ -24,13 +24,17 @@ export default function Detail() {
   };
   useEffect(() => {
     setCurrItem(Data[seq - 1]);
-    const tl = ani.timeline();
+    const tl = ani.timeline({
+      easing: 'easeOutExpo',
+      duration: 400
+    });
     const seqEle = wrapper.current.querySelector('.left .seq');
     const txt = wrapper.current.querySelector('.left hgroup');
     const desc = wrapper.current.querySelector('.left .desc');
     const pic = wrapper.current.querySelector('.right');
     tl.add({
       targets: seqEle,
+
       scale: [2, 1]
     })
       .add({
@@ -57,29 +61,31 @@ export default function Detail() {
   return (
     <StyledWrapper ref={wrapper}>
       <Header />
-      <Footer />
-      <div className="left">
-        <em className="seq">{seq}</em>
-        <hgroup>
-          <h1>{header}</h1>
-          <h2>{intro}</h2>
-        </hgroup>
-        <p className="desc">{desc}</p>
+      <div className="main">
+        <div className="left">
+          <em className="seq">{seq}</em>
+          <hgroup>
+            <h1>{header}</h1>
+            <h2>{intro}</h2>
+          </hgroup>
+          <p className="desc">{desc}</p>
+        </div>
+        <div className="right">
+          <img src={`imgs/${pic}`} alt="tip pic" />
+        </div>
         <div className="navs">
-          <Link to="/" className="nav home">
-            <img src={ImageHome} alt="home image" />
-          </Link>
           <button disabled={seq == 1} onClick={handlePrevClick} className="nav prev">
             <img src={ImageBack} alt="prev image" />
           </button>
+          <Link to="/" className="nav home">
+            <img src={ImageHome} alt="home image" />
+          </Link>
           <button disabled={seq == Data.length} onClick={handleNextClick} className="nav next">
             <img src={ImageBack} alt="next image" />
           </button>
         </div>
       </div>
-      <div className="right">
-        <img src={`imgs/${pic}`} alt="tip pic" />
-      </div>
+      <Footer />
     </StyledWrapper>
   );
 }

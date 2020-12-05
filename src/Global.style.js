@@ -24,8 +24,7 @@ const GlobalStyle = createGlobalStyle`
   }
   #root{
     min-height:100vh;
-    background-color:rgba(245, 230, 200, 0.4);
-    /* background-image:linear-gradient(135deg, rgb(96, 108, 136) 0%, rgb(63, 76, 107) 100%); */
+    background-color:rgba(245, 230, 200);
   }
 
   @media screen and (min-width: 320px){

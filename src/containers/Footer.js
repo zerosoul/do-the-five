@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import Share from '../components/Share';
 const StyledWrapper = styled.footer`

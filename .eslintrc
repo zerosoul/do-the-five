@@ -10,6 +10,7 @@
     "react-hooks/exhaustive-deps": "warn",
     "max-lines": ["warn", { "max": 500 }],
     "react/display-name" : 0,
+    "react/react-in-jsx-scope": 0
   },
   "parser": "babel-eslint",
   "parserOptions": {

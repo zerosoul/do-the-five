@@ -4,18 +4,18 @@
   "description": "Do the five to stop coronavirus",
   "main": "main.jsx",
   "dependencies": {
-    "animejs": "^3.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "animejs": "^3.2.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-router": "^6.4.2",
     "react-router-dom": "^6.4.2",
-    "react-share": "^4.4.0",
-    "style-loader": "3.3.1",
-    "styled-components": "^5.3.6",
-    "styled-reset": "^4.4.2"
+    "react-share": "^5.1.1",
+    "style-loader": "4.0.0",
+    "styled-components": "^6.1.13",
+    "styled-reset": "^4.5.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^2.1.0",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.10",
@@ -23,7 +23,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "vite": "^3.1.8"
+    "vite": "^6.0.2"
   },
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "bugs": {
     "url": "https://github.com/zerosoul/do-the-five/issues"
   },
-  "homepage": "https://works.yangerxiao.com/do-the-five/",
+  "homepage": "https://do-the-five.yangerxiao.com/",
   "engines": {
     "node": ">=15.0.0",
     "npm": ">=7.0.0"
